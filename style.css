@@ -452,6 +452,8 @@ xclip
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #031463;
+    backdrop-filter: blur(5px);
+    background-color: rgba(3,20,99,0.85);
 }
 
 #clouds{
@@ -591,7 +593,6 @@ xclip
 	margin-left: auto;
 	margin-top: 0px;
 	cursor: pointer;
-    box-shadow: 2px 2px 12px 2px rgb(139, 118, 118);
 }
 
 .btn-hover-new::after {
@@ -620,13 +621,12 @@ xclip
 .btn-hover-new:hover{
 	color: #ffffff;
 	background-color: #031562;
-    box-shadow: 2px 2px 12px 2px #031562;
-
+    border: none;
 }
 .btn-hover-new:hover > span {
     opacity: 0;
-    -webkit-transform: translate(0px,40px);
-    transform: translate(0px,40px);
+    -webkit-transform: translate(0px,10px);
+    transform: translate(0px,10px);
 }
 .btn-hover-new:hover::after {
     opacity: 1;
@@ -2327,14 +2327,14 @@ select.mobile-device {
 }
 
 .dmtop {
-    background-color: #3C3D41;
+    background-color: #031463;
     z-index: 100;
     width: 50px;
     height: 50px;
     line-height: 47px;
     position: fixed;
     bottom: -100px;
-    border-radius: 3px;
+    border-radius: 50px;
     right: 50px;
     text-align: center;
     font-size: 28px;
